@@ -38,7 +38,7 @@
 
             <ImageView
                 android:layout_alignParentRight="true"
-                android:src="@drawable/pic3"
+                android:src="@drawable/pic1"
                 android:layout_width="100dp"
                 android:layout_height="100dp"/>
         </RelativeLayout>
@@ -71,7 +71,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
             <ImageView
-                android:src="@drawable/pic1"
+                android:src="@drawable/pic3"
                 android:layout_width="100dp"
                 android:layout_height="100dp"/>
             <TextView
@@ -103,7 +103,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <ImageView
-                        android:src="@drawable/pic1"
+                        android:src="@drawable/pic3"
                         android:layout_width="100dp"
                         android:layout_height="100dp"/>
                     <TextView
@@ -135,7 +135,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <ImageView
-                        android:src="@drawable/pic1"
+                        android:src="@drawable/pic3"
                         android:layout_width="100dp"
                         android:layout_height="100dp"/>
                     <TextView
@@ -167,7 +167,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <ImageView
-                        android:src="@drawable/pic1"
+                        android:src="@drawable/pic3"
                         android:layout_width="100dp"
                         android:layout_height="100dp"/>
                     <TextView
