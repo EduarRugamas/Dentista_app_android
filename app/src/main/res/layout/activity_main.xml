@@ -45,7 +45,8 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            >
 
         <GridLayout
             android:columnCount="2"
@@ -58,7 +59,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
+            android:layout_columnWeight="6"
             android:layout_rowWeight="1"
             app:cardElevation="5dp"
             app:cardCornerRadius="5dp"
@@ -122,7 +123,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
+                android:layout_columnWeight="6"
                 android:layout_rowWeight="1"
                 app:cardElevation="5dp"
                 app:cardCornerRadius="5dp"
@@ -154,7 +155,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
+                android:layout_columnWeight="3"
                 android:layout_rowWeight="1"
                 app:cardElevation="5dp"
                 app:cardCornerRadius="5dp"
