@@ -1,9 +1,10 @@
-package com.devexpertos.dentistaapp
+package com.devexpertos.dentistaapp.Auth
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.devexpertos.dentistaapp.R
 
 class SignUp : AppCompatActivity() {
 
@@ -15,7 +16,7 @@ class SignUp : AppCompatActivity() {
 
         button = findViewById(R.id.btnSignUp)
         button.setOnClickListener {
-            val intent = Intent(this, Loging::class.java)
+            val intent = Intent(this, LogIn::class.java)
             startActivity(intent)
 
         }
