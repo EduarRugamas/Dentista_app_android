@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "845840669248",
+    "firebase_url": "https://dentistapp-a3c0f-default-rtdb.firebaseio.com",
+    "project_id": "dentistapp-a3c0f",
+    "storage_bucket": "dentistapp-a3c0f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:845840669248:android:a3cca67bd152a200649da5",
+        "android_client_info": {
+          "package_name": "com.devexpertos.dentistaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "845840669248-jotb11ng5homvs2o59d9nr1k86jr0kn0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLogdXIy8zsvv41o2RZbOVCZ3CSoemOjc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "845840669248-jotb11ng5homvs2o59d9nr1k86jr0kn0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

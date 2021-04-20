@@ -4,10 +4,20 @@
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#033645</color>
-    <color name="teal_700">#2196F3</color>
+
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+
+<!--  colors app denti   -->
+    <color name="background">#384F9F</color>
+    <color name="blanco">#ffffff</color>
+    <color name="negro">#000000</color>
+    <color name="background_transparente">#00ffffff</color>
+    <color name="background_resource">#2196F3</color>
+    <color name="verde">#11947A</color>
     <color name="lightblue">#66ccff</color>
     <color name="grey">#7f97a9</color>
-
+    <color name="gris">#c4c4c4</color>
 </resources>
