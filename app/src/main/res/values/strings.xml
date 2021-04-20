@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Dentista App</string>
+    <string name="denti_app">Denti-App</string>
+
+    <string name="frase">Donde Tu Sonrisa </string>
+    <string name="frase2">Es Nuestra Mision</string>
+    <string name="frase3"> Cuidar.</string>
+    <string name="iniciar_sesion">Iniciar Sesion</string>
+    <string name="registrar_usuario">Crear Usuario</string>
+
+    <string name="correo">Correo Electronico</string>
+    <string name="contra">Contraseña</string>
+    <string name="crear_usuario">Crear usuario</string>
+    <string name="iniciar_google">Iniciar Sesion con Google</string>
+    <string name="creando_usuario">Creando Usuario......</string>
+    <string name="iniciando_usuario">Iniciando Sesion.....</string>
+
+    <string name="error">Los campos son requeridos</string>
 </resources>
