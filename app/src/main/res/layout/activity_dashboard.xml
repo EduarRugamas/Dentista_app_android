@@ -25,6 +25,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+
+
         <TextView
             android:id="@+id/texto_dash"
             android:layout_width="wrap_content"
@@ -37,6 +39,32 @@
             android:textSize="30sp"
             />
 
+        <TextView
+            android:id="@+id/text_email_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/texto_dash"
+            android:layout_alignParentEnd="true"
+            tools:text="eduar.admin@hotmail.com"
+            android:textColor="@color/blanco"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:textSize="17sp"
+            android:textAlignment="center"
+            />
+
+        <ImageView
+            android:id="@+id/btn_cerrar_sesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_logout"
+            android:layout_below="@id/text_email_user"
+            android:layout_alignEnd="@id/text_email_user"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="5dp"
+
+            />
 
 
         <GridLayout
@@ -135,7 +163,7 @@
 
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/View_lista_medicamentos"
+                android:id="@+id/View_servicios_clinicos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_row="1"
