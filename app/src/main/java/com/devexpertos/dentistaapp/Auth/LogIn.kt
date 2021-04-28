@@ -23,12 +23,17 @@ class LogIn : AppCompatActivity() {
 
 
         Btn_iniciar_sesion.setOnClickListener {
+
             val correo = Getcorreo.text.toString()
             val contra = Getcontra.text.toString()
+
             val alerta = DialogAlertCustom()
+
             if(correo.isEmpty() && contra.isEmpty()){
+
                 alerta.LoadingDialog(this)
                 alerta.StartLoadingDialog()
+
             }else{
                 IniciarSesion(correo,contra)
             }
@@ -42,8 +47,9 @@ class LogIn : AppCompatActivity() {
     }
 
     private fun IniciarSesion(email:String, password:String){
+
         val logIn = LogInDialog()
-      if (email.isNotEmpty() && password.isNotEmpty()){
+
           FirebaseAuth
               .getInstance()
               .signInWithEmailAndPassword(email,password)
@@ -59,15 +65,19 @@ class LogIn : AppCompatActivity() {
               .addOnFailureListener {
                   Log.d("Erro_Inicio_sesion",it.message.toString())
               }
-      }
+
 
     }
 
     private fun ShowDashboard(){
-        startActivity(Intent(this,DashBoardActivity::class.java))
+       val nav = Intent(this, DashBoardActivity::class.java).apply {
+           finish()
+       }
+        startActivity(nav)
     }
 
     private fun CrearUsuario(){
         startActivity(Intent(this, SignUp::class.java))
+
     }
 }

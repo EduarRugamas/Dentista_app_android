@@ -25,7 +25,9 @@ class SignUp : AppCompatActivity() {
         btn_crear_usuario.setOnClickListener {
             val email = getcorreo.text.toString()
             val contra = getcontra.text.toString()
+
             val alerta = DialogAlertCustom()
+
             if(email.isEmpty() && contra.isEmpty()){
                 alerta.LoadingDialog(this)
                 alerta.StartLoadingDialog()
@@ -37,23 +39,27 @@ class SignUp : AppCompatActivity() {
     }
 
     private fun CrearUsuario(Correo:String,Password:String){
-        if (Correo.isNotEmpty() && Password.isNotEmpty()){
             FirebaseCreateUser(Correo,Password)
-        }else{
-            Toast.makeText(this, "Los Campos Son Requeridos", Toast.LENGTH_SHORT).show()
-        }
     }
 
     private fun FirebaseCreateUser(email:String,password:String){
+
         val loading = CreateUserDialog()
+
         FirebaseAuth
             .getInstance()
             .createUserWithEmailAndPassword(email,password)
             .addOnCompleteListener { result ->
                 if (result.isSuccessful){
+
                     loading.LoadingDialog(this)
                     loading.StartLoadingDialog()
-                    startActivity(Intent(this,DashBoardActivity::class.java))
+
+                    val nav = Intent(this, DashBoardActivity::class.java).apply {
+                        finish()
+                    }
+                    startActivity(nav)
+
                 }
             }
             .addOnFailureListener {
