@@ -26,5 +26,6 @@
     <string name="servicios_de_la_clinica">Servicios Clinicos</string>
     <string name="lista_medicos">Medicos</string>
     <string name="contactos">Contactos</string>
+    <string name="usuario">Usuario</string>
 
 </resources>

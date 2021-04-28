@@ -40,16 +40,29 @@
             />
 
         <TextView
+            android:id="@+id/text_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/usuario"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/texto_dash"
+            android:textSize="17sp"
+            android:textAlignment="center"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+            />
+
+        <TextView
             android:id="@+id/text_email_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/texto_dash"
-            android:layout_alignParentEnd="true"
             tools:text="eduar.admin@hotmail.com"
             android:textColor="@color/blanco"
             android:layout_marginEnd="20dp"
             android:layout_marginTop="5dp"
             android:textSize="17sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/text_user"
             android:textAlignment="center"
             />
 
@@ -59,10 +72,10 @@
             android:layout_height="wrap_content"
             android:contentDescription="@string/app_name"
             android:src="@drawable/ic_logout"
-            android:layout_below="@id/text_email_user"
-            android:layout_alignEnd="@id/text_email_user"
-            android:layout_marginEnd="25dp"
-            android:layout_marginTop="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/text_email_user"
+            android:layout_marginEnd="45dp"
+            android:layout_marginTop="-11dp"
 
             />
 
