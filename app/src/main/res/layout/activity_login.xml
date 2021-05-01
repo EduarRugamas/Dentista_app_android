@@ -105,6 +105,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@color/verde"
+                android:drawableStart="@drawable/ic_user_login"
+                android:paddingStart="12dp"
+                android:paddingEnd="10dp"
                 android:text="@string/iniciar_sesion"
                 android:textColor="@color/blanco"
                 android:textSize="13sp" />
@@ -119,6 +122,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@color/background_resource"
+                android:drawableStart="@drawable/ic_user_add"
+                android:paddingStart="12dp"
+                android:paddingEnd="10dp"
                 android:text="@string/crear_usuario"
                 android:textColor="@color/blanco"
                 android:textSize="13sp" />

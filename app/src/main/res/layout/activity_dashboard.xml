@@ -13,9 +13,11 @@
         android:layout_height="wrap_content"
         android:contentDescription="@string/app_name"
         android:src="@drawable/background_resource_dashboard"
+       android:layout_marginBottom="540dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -25,8 +27,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-
-
         <TextView
             android:id="@+id/texto_dash"
             android:layout_width="wrap_content"
@@ -34,7 +34,7 @@
             android:text="@string/dash"
             android:layout_centerHorizontal="true"
             android:textStyle="bold"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
             android:textColor="@color/blanco"
             android:textSize="30sp"
             />
@@ -74,8 +74,8 @@
             android:src="@drawable/ic_logout"
             android:layout_alignParentEnd="true"
             android:layout_alignTop="@id/text_email_user"
-            android:layout_marginEnd="45dp"
-            android:layout_marginTop="-11dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginTop="-7dp"
 
             />
 
@@ -89,7 +89,7 @@
             android:layout_marginBottom="20dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="65dp"
             >
 
 <!--     Primera columna       -->
@@ -112,7 +112,7 @@
                     android:orientation="vertical"
                     android:gravity="center"
                     android:layout_gravity="center_vertical|center_horizontal"
-                    >
+                    tools:ignore="UseCompoundDrawables">
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -152,7 +152,7 @@
                     android:orientation="vertical"
                     android:gravity="center"
                     android:layout_gravity="center_vertical|center_horizontal"
-                    >
+                    tools:ignore="UseCompoundDrawables">
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -194,7 +194,7 @@
                     android:orientation="vertical"
                     android:gravity="center"
                     android:layout_gravity="center_vertical|center_horizontal"
-                    >
+                    tools:ignore="UseCompoundDrawables">
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -234,7 +234,7 @@
                     android:orientation="vertical"
                     android:gravity="center"
                     android:layout_gravity="center_vertical|center_horizontal"
-                    >
+                    tools:ignore="UseCompoundDrawables">
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -274,7 +274,7 @@
                     android:orientation="vertical"
                     android:gravity="center"
                     android:layout_gravity="center_vertical|center_horizontal"
-                    >
+                    tools:ignore="UseCompoundDrawables">
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

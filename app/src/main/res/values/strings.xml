@@ -10,10 +10,11 @@
 
     <string name="correo">Correo Electronico</string>
     <string name="contra">Contraseña</string>
-    <string name="crear_usuario">Crear usuario</string>
-    <string name="iniciar_google">Iniciar Sesion con Google</string>
+    <string name="crear_usuario">Registrar usuario</string>
+    <string name="iniciar_session">Iniciar Sesion</string>
     <string name="creando_usuario">Creando Usuario......</string>
     <string name="iniciando_usuario">Iniciando Sesion.....</string>
+    <string name="cerrando_session">Cerrando Sesion.......</string>
 
     <string name="error">Los campos son requeridos</string>
     <string name="aceptar">Aceptar</string>
@@ -26,6 +27,6 @@
     <string name="servicios_de_la_clinica">Servicios Clinicos</string>
     <string name="lista_medicos">Medicos</string>
     <string name="contactos">Contactos</string>
-    <string name="usuario">Usuario</string>
+    <string name="usuario">Bienvenido/a</string>
 
 </resources>
