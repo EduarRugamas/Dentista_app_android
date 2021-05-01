@@ -4,24 +4,23 @@ import android.app.Activity
 import android.app.AlertDialog
 import com.devexpertos.dentistaapp.R
 
-class CreateUserDialog {
+class DialogValidationAlert {
 
     private var activity: Activity? = null
     private var dialog: AlertDialog? = null
 
-//    //funcion de llamado donde se obtiene la actividad
 //    fun LoadingDialog(myActivity: Activity?) {
 //        activity = myActivity
 //    }
 
-    //creacion de la alerta
-    fun Crear_Usuario_Aler_tDialog(myActivity: Activity?) {
+
+    fun Loading_Alert_Validation(myActivity: Activity?) {
+
         activity = myActivity
 
         val builder = AlertDialog.Builder(activity)
         val inflater = activity!!.layoutInflater
-        builder.setView(inflater.inflate(R.layout.custom_alert_create_user, null))
-        builder.setPositiveButton(R.string.aceptar, null)
+        builder.setView(inflater.inflate(R.layout.custom_alert_validation, null))
         dialog = builder.create()
         dialog?.show()
     }
