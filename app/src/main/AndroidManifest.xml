@@ -5,24 +5,18 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DentistaApp">
-        <activity android:name=".Dashboard.Screen_Dash.ContactosActivity"></activity>
-        <activity android:name=".Dashboard.Screen_Dash.ListaMedicamentosActivity" />
-        <activity android:name=".Dashboard.Screen_Dash.ListaMedicosActivity" />
-        <activity android:name=".Dashboard.Screen_Dash.ServiciosClinicosActivity" />
-        <activity android:name=".Dashboard.Screen_Dash.ControlCitasActivity" />
-        <activity android:name=".Dashboard.Screen_Dash.CrearCitaActivity" />
+
         <activity
             android:name=".SplashScreen.SplashActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -35,6 +29,12 @@
         <activity
             android:name=".Dashboard.DashBoardActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".Dashboard.Screen_Dash.ContactosActivity" android:parentActivityName=".Dashboard.DashBoardActivity"/>
+        <activity android:name=".Dashboard.Screen_Dash.ListaMedicamentosActivity" android:parentActivityName=".Dashboard.DashBoardActivity"/>
+        <activity android:name=".Dashboard.Screen_Dash.ListaMedicosActivity" android:parentActivityName=".Dashboard.DashBoardActivity"/>
+        <activity android:name=".Dashboard.Screen_Dash.ServiciosClinicosActivity" android:parentActivityName=".Dashboard.DashBoardActivity"/>
+        <activity android:name=".Dashboard.Screen_Dash.ControlCitasActivity" android:parentActivityName=".Dashboard.DashBoardActivity"/>
+        <activity android:name=".Dashboard.Screen_Dash.CrearCitaActivity" android:parentActivityName=".Dashboard.DashBoardActivity"/>
     </application>
 
 </manifest>

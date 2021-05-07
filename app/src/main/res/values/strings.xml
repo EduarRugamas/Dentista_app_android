@@ -15,6 +15,7 @@
     <string name="creando_usuario">Creando Usuario......</string>
     <string name="iniciando_usuario">Iniciando Sesion.....</string>
     <string name="cerrando_session">Cerrando Sesion.......</string>
+    <string name="cerrar_session">Cerrar Sesion</string>
 
     <string name="error">Los campos son requeridos</string>
     <string name="aceptar">Aceptar</string>

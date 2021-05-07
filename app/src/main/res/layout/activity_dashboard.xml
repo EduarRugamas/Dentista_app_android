@@ -7,17 +7,25 @@
     android:orientation="vertical"
     tools:context=".Dashboard.DashBoardActivity">
 
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/action_bar_toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:contentDescription="@string/app_name"
         android:src="@drawable/background_resource_dashboard"
-       android:layout_marginBottom="540dp"
+        android:layout_marginTop="55dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintTop_toTopOf="@id/toolbar"
+       />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -25,32 +33,21 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/texto_dash"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/dash"
-            android:layout_centerHorizontal="true"
-            android:textStyle="bold"
-            android:layout_marginTop="15dp"
-            android:textColor="@color/blanco"
-            android:textSize="30sp"
-            />
+        app:layout_constraintTop_toTopOf="@id/toolbar">
 
         <TextView
             android:id="@+id/text_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/usuario"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/texto_dash"
-            android:textSize="17sp"
+            android:layout_alignTop="@id/toolbar"
+            android:text="@string/usuario"
             android:textAlignment="center"
             android:textColor="@color/blanco"
+            android:textSize="17sp"
             android:textStyle="bold"
-            />
+            android:layout_marginTop="70dp"
+            tools:ignore="NotSibling" />
 
         <TextView
             android:id="@+id/text_email_user"
@@ -59,37 +56,23 @@
             tools:text="eduar.admin@hotmail.com"
             android:textColor="@color/blanco"
             android:layout_marginEnd="20dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             android:textSize="17sp"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/text_user"
             android:textAlignment="center"
             />
 
-        <ImageView
-            android:id="@+id/btn_cerrar_sesion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/ic_logout"
-            android:layout_alignParentEnd="true"
-            android:layout_alignTop="@id/text_email_user"
-            android:layout_marginEnd="55dp"
-            android:layout_marginTop="-7dp"
-
-            />
-
-
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/texto_dash"
+            android:layout_below="@id/text_email_user"
             android:rowCount="3"
             android:columnCount="2"
             android:layout_marginBottom="20dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginTop="65dp"
+            android:layout_marginTop="15dp"
             >
 
 <!--     Primera columna       -->
@@ -313,7 +296,7 @@
                     android:orientation="vertical"
                     android:gravity="center"
                     android:layout_gravity="center_vertical|center_horizontal"
-                    >
+                    tools:ignore="UseCompoundDrawables">
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

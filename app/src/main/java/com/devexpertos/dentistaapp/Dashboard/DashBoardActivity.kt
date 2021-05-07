@@ -6,11 +6,15 @@ import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.Window
 import android.view.WindowManager.LayoutParams.*
+import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
 import com.devexpertos.dentistaapp.Auth.LogIn
 import com.devexpertos.dentistaapp.R
+import com.devexpertos.dentistaapp.Utils.MyToolbar
 import com.devexpertos.dentistaapp.Utils.SignOutAlert
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_dashboard.*
@@ -23,8 +27,6 @@ class DashBoardActivity : AppCompatActivity() {
         ColorsStatusBar()
 
         val email_user = FirebaseAuth.getInstance().currentUser?.email
-
-
         text_email_user.text = email_user
 
         //Guardado de datos
@@ -33,13 +35,30 @@ class DashBoardActivity : AppCompatActivity() {
         prefs.apply()
 
 
-        btn_cerrar_sesion.setOnClickListener {
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.dash_menu, menu)
+
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        if (item.itemId == R.id.cerrar_sesion){
             CerrarSession()
         }
 
+        return super.onOptionsItemSelected(item)
     }
 
+    @SuppressLint("RestrictedApi")
     private fun ColorsStatusBar(){
+
+        MyToolbar().MostrarToolbar(this,getString(R.string.dash), false)
+
+
+
         val statusBar : Window = window
         statusBar.clearFlags(FLAG_TRANSLUCENT_STATUS)
         statusBar.addFlags(FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
@@ -50,14 +69,14 @@ class DashBoardActivity : AppCompatActivity() {
 
     private fun CerrarSession(){
 
-        val signout = SignOutAlert()
+        val alerta = SignOutAlert()
 
         val prefs = getSharedPreferences("KEY_PREFS", Context.MODE_PRIVATE).edit()
         prefs.clear()
         prefs.apply()
 
         val nav = Intent(this, LogIn::class.java).apply {
-            signout.Loading_Alert_SignOut(this@DashBoardActivity)
+            alerta.Loading_Alert_SignOut(this@DashBoardActivity)
             FirebaseAuth.getInstance().signOut()
             finish()
         }
