@@ -17,11 +17,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:contentDescription="@string/app_name"
         android:src="@drawable/background_resource_dashboard"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/toolbar"
@@ -39,29 +39,29 @@
             android:id="@+id/text_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
             android:layout_alignTop="@id/toolbar"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="70dp"
             android:text="@string/usuario"
             android:textAlignment="center"
             android:textColor="@color/blanco"
             android:textSize="17sp"
             android:textStyle="bold"
-            android:layout_marginTop="70dp"
             tools:ignore="NotSibling" />
 
         <TextView
             android:id="@+id/text_email_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="eduar.admin@hotmail.com"
-            android:textColor="@color/blanco"
-            android:layout_marginEnd="20dp"
-            android:layout_marginTop="10dp"
-            android:textSize="17sp"
-            android:layout_centerHorizontal="true"
             android:layout_below="@id/text_user"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="5dp"
             android:textAlignment="center"
-            />
+            android:textColor="@color/blanco"
+            android:textSize="17sp"
+            tools:text="eduar.admin@hotmail.com" />
 
         <GridLayout
             android:layout_width="match_parent"
@@ -199,7 +199,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/View_servicios_medicos"
+                android:id="@+id/View_lista_medicos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_row="1"
@@ -239,7 +239,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/View_lista_medicos"
+                android:id="@+id/View_lista_medicamentos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_row="2"

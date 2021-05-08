@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto">
     <!-- Base application theme. -->
     <style name="Theme.DentistaApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
@@ -7,15 +7,15 @@
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorOnSecondary">@color/black</item>
+<!--        <item name="colorOnSecondary">@color/black</item>-->
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+<!--        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>-->
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.ActionBar" >
         <item name="colorControlNormal">@color/blanco</item>
         <item name="titleTextColor">@color/blanco</item>
-<!--        <item name="android:elevation">0dp</item>-->
+        <item name="android:elevation">0dp</item>
     </style>
 </resources>

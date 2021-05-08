@@ -3,16 +3,15 @@ package com.devexpertos.dentistaapp.Dashboard
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
-import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.Window
 import android.view.WindowManager.LayoutParams.*
-import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
 import com.devexpertos.dentistaapp.Auth.LogIn
+import com.devexpertos.dentistaapp.Dashboard.Screen_Dash.*
 import com.devexpertos.dentistaapp.R
 import com.devexpertos.dentistaapp.Utils.MyToolbar
 import com.devexpertos.dentistaapp.Utils.SignOutAlert
@@ -29,12 +28,26 @@ class DashBoardActivity : AppCompatActivity() {
         val email_user = FirebaseAuth.getInstance().currentUser?.email
         text_email_user.text = email_user
 
-        //Guardado de datos
-        val prefs = getSharedPreferences("KEY_PREFS", Context.MODE_PRIVATE).edit()
-        prefs.putString("User_Email", email_user)
-        prefs.apply()
+        Save_Session(email_user.toString())
 
-
+        View_crear_cita.setOnClickListener {
+            Nav_action(this, CrearCitaActivity::class.java)
+        }
+        View_control_cita.setOnClickListener {
+            Nav_action(this, ControlCitasActivity::class.java)
+        }
+        View_servicios_clinicos.setOnClickListener {
+            Nav_action(this, ServiciosClinicosActivity::class.java)
+        }
+        View_lista_medicos.setOnClickListener {
+            Nav_action(this, ListaMedicosActivity::class.java)
+        }
+        View_lista_medicamentos.setOnClickListener {
+            Nav_action(this, ListaMedicamentosActivity::class.java)
+        }
+        View_contactos.setOnClickListener {
+            Nav_action(this, ContactosActivity::class.java)
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -56,8 +69,6 @@ class DashBoardActivity : AppCompatActivity() {
     private fun ColorsStatusBar(){
 
         MyToolbar().MostrarToolbar(this,getString(R.string.dash), false)
-
-
 
         val statusBar : Window = window
         statusBar.clearFlags(FLAG_TRANSLUCENT_STATUS)
@@ -82,6 +93,19 @@ class DashBoardActivity : AppCompatActivity() {
         }
         startActivity(nav)
     }
+
+    private fun Save_Session(email:String){
+        //Guardado de datos
+        val prefs = getSharedPreferences("KEY_PREFS", Context.MODE_PRIVATE).edit()
+        prefs.putString("User_Email", email)
+        prefs.apply()
+
+    }
+
+    private fun Nav_action(MyActivity:AppCompatActivity, SecondActivity: Class<*>? ) {
+        startActivity(Intent(MyActivity, SecondActivity))
+    }
+
 
 
 }
