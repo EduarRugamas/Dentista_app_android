@@ -29,5 +29,11 @@
     <string name="lista_medicos">Medicos</string>
     <string name="contactos">Contactos</string>
     <string name="usuario">Bienvenido/a</string>
+    <string name="item_nombre">Nombre:</string>
+    <string name="item_horario_servicio_clinico">Horario:</string>
+    <string name="item_precio_servicio_clinico">Precio:</string>
+    <string name="item_especialidad_medicos">Especialidad:</string>
+    <string name="item_horario_medicos">Horario:</string>
+    <string name="item_medicamento_precio">Precio</string>
 
 </resources>

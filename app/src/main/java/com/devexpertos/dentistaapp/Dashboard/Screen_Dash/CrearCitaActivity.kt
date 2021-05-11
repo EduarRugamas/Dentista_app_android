@@ -14,6 +14,8 @@ class CrearCitaActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_crear_cita)
         ColorsStatusBar()
+
+
     }
 
 
