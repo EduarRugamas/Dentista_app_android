@@ -28,7 +28,12 @@ _Esta aplicacion facilitara la creacion y agendacion de citas para una clinica p
 
 
 ## Manual de usuario y Manual Tecnico
-<h3 align="center" >https://drive.google.com/drive/folders/1I_JauiHWvcrPB58NdKm6jtBK1IqCZvuA?usp=sharing</h3>
+<h3 align="center" >Manuales</h3>
+
+- Googl Drive : 
+```
+https://drive.google.com/drive/folders/1I_JauiHWvcrPB58NdKm6jtBK1IqCZvuA?usp=sharing
+```
 
 ## Dependecias
 
