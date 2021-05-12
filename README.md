@@ -38,36 +38,36 @@ https://drive.google.com/drive/folders/1I_JauiHWvcrPB58NdKm6jtBK1IqCZvuA?usp=sha
 ## Dependecias
 
 <h3 align="center" >Implementaciones</h3>
-  implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.3.2'
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'com.google.android.material:material:1.3.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+   - implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+   - implementation 'androidx.core:core-ktx:1.3.2'
+   - implementation 'androidx.appcompat:appcompat:1.2.0'
+   - implementation 'com.google.android.material:material:1.3.0'
+   - implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
 
 //    Firebase
-    implementation 'com.google.firebase:firebase-database:19.7.0'
-    implementation 'com.google.firebase:firebase-auth-ktx:20.0.4'
-    implementation 'com.google.android.gms:play-services-auth:19.0.0'
-    implementation 'com.google.firebase:firebase-auth:20.0.4'
-    implementation 'com.google.firebase:firebase-firestore-ktx:22.1.2'
+   - implementation 'com.google.firebase:firebase-database:19.7.0'
+   - implementation 'com.google.firebase:firebase-auth-ktx:20.0.4'
+   - implementation 'com.google.android.gms:play-services-auth:19.0.0'
+   - implementation 'com.google.firebase:firebase-auth:20.0.4'
+   - implementation 'com.google.firebase:firebase-firestore-ktx:22.1.2'
 //    firebase
-//    Animaciones lottie
-    implementation 'com.airbnb.android:lottie:3.7.0'
+//   Animaciones lottie
+    - implementation 'com.airbnb.android:lottie:3.7.0'
 //    Animaciones lottie
 //    card view
-    implementation "androidx.cardview:cardview:1.0.0"
-//    card view
-//    recyclerview
-    implementation "androidx.recyclerview:recyclerview:1.2.0"
+   - implementation "androidx.cardview:cardview:1.0.0"
+//  - card view
+//  - recyclerview
+    - implementation "androidx.recyclerview:recyclerview:1.2.0"
 //    recyclerview
 
-//    glide
-    implementation 'com.github.bumptech.glide:glide:4.11.0'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
-//    glide
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+//   - glide
+    - implementation 'com.github.bumptech.glide:glide:4.11.0'
+    - annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+//   - glide
+    - testImplementation 'junit:junit:4.13.2'
+   - androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+   - androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
 ## Autor/es
 
