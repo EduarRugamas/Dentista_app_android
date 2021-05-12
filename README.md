@@ -30,14 +30,15 @@ _Esta aplicacion facilitara la creacion y agendacion de citas para una clinica p
 ## Manual de usuario y Manual Tecnico
 <h3 align="center" >Manuales</h3>
 
-- Googl Drive : 
+- Google Drive : 
 ```
 https://drive.google.com/drive/folders/1I_JauiHWvcrPB58NdKm6jtBK1IqCZvuA?usp=sharing
 ```
 
 ## Dependecias
 
-<h3 align="center" >implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+<h3 align="center" >Implementaciones</h3>
+  implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.3.2'
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.3.0'
@@ -66,7 +67,7 @@ https://drive.google.com/drive/folders/1I_JauiHWvcrPB58NdKm6jtBK1IqCZvuA?usp=sha
 //    glide
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'</h3>
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
 ## Autor/es
 
