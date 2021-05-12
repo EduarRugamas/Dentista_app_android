@@ -27,15 +27,41 @@ _Esta aplicacion facilitara la creacion y agendacion de citas para una clinica p
 - Listado de Medicos que ofrecen sus servicios en la clinica dental
 
 
-## Guía de usuario
-<h3 align="center" >Falta</h3>
-
-## Guía de instalación
-<h3 align="center" >Falta</h3>
+## Manual de usuario y Manual Tecnico
+<h3 align="center" >https://drive.google.com/drive/folders/1I_JauiHWvcrPB58NdKm6jtBK1IqCZvuA?usp=sharing</h3>
 
 ## Dependecias
 
-<h3 align="center" >Falta</h3>
+<h3 align="center" >implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+
+//    Firebase
+    implementation 'com.google.firebase:firebase-database:19.7.0'
+    implementation 'com.google.firebase:firebase-auth-ktx:20.0.4'
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.google.firebase:firebase-auth:20.0.4'
+    implementation 'com.google.firebase:firebase-firestore-ktx:22.1.2'
+//    firebase
+//    Animaciones lottie
+    implementation 'com.airbnb.android:lottie:3.7.0'
+//    Animaciones lottie
+//    card view
+    implementation "androidx.cardview:cardview:1.0.0"
+//    card view
+//    recyclerview
+    implementation "androidx.recyclerview:recyclerview:1.2.0"
+//    recyclerview
+
+//    glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+//    glide
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'</h3>
 
 ## Autor/es
 
@@ -46,10 +72,6 @@ _Esta aplicacion facilitara la creacion y agendacion de citas para una clinica p
 
 <h3 align="center" >Links de mockups y tablero de actividades </h3>
 
-- Link de Video en YouTube demostrativo
-```
-Falta
-```
 - link de Mockups creados en Figma
 ```
 https://www.figma.com/file/zqakiJbRMs4sYdJJx1vRBg/App-Dentista?node-id=0%3A1
@@ -58,7 +80,3 @@ https://www.figma.com/file/zqakiJbRMs4sYdJJx1vRBg/App-Dentista?node-id=0%3A1
 ```
 https://www.notion.so/Denti-App-559a18b20be146f69b2306c61f741053
 ```
-
-
-## Licencia
-<h3 align="center" >Falta</h3>
