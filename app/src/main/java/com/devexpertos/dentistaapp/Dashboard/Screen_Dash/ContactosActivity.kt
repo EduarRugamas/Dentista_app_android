@@ -19,7 +19,7 @@ class ContactosActivity : AppCompatActivity() {
     @SuppressLint("RestrictedApi")
     private fun ColorsStatusBar(){
 
-        MyToolbar().MostrarToolbar(this,getString(R.string.dash), false)
+        MyToolbar().MostrarToolbar(this,"Contactos", true)
 
         val statusBar : Window = window
         statusBar.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)

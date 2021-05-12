@@ -35,5 +35,41 @@
     <string name="item_especialidad_medicos">Especialidad:</string>
     <string name="item_horario_medicos">Horario:</string>
     <string name="item_medicamento_precio">Precio</string>
+    <string name="crea_tu_cita_aqui">Crea tu cita aqui</string>
+    <string name="nombre_y_apellido">Nombre y Apellido</string>
+    <string name="formulario">Solicitar Formulario</string>
+    <string name="procedimiento">Procedimiento:</string>
+
+
+    <string-array name="opciones_servicios">
+        <item>Servicios Dentales......</item>
+        <item>Frenos</item>
+        <item>Coronas</item>
+        <item>Rellenos Dentales</item>
+        <item>Extracciones Dentales</item>
+        <item>Protesis Dentales</item>
+        <item>Endodoncias</item>
+        <item>Limpiezas Dentales</item>
+        <item>Radiografias</item>
+    </string-array>
+
+    <string-array name="opciones_dias">
+        <item>Dia de la semana</item>
+        <item>Lunes</item>
+        <item>Martes</item>
+        <item>Miercoles</item>
+        <item>Jueves</item>
+        <item>Viernes</item>
+    </string-array>
+    <string name="sin_horario">Sin Horario</string>
+    <string name="hora_frenos">9:30 A.M a 11:00 A.M</string>
+    <string name="hora_coronas">8:00 A.M a 5:00 P.M</string>
+    <string name="hora_relleno">8:00 A.M a 9:30 A.M</string>
+    <string name="hora_extraciones">8:00 A.M a 5:00 P.M</string>
+    <string name="hora_protesis">8:00 A.M a 5:00 P.M</string>
+    <string name="hora_endodoncias">2:00 P.M a 3:30 P.M</string>
+    <string name="hora_limpieza">8:00 A.M a 5:00 P.M</string>
+    <string name="hora_radiografias">1:00 P.M a 2:30 P.M</string>
+    <string name="agendar_cita">Agendar Cita</string>
 
 </resources>

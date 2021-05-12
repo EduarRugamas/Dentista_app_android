@@ -34,7 +34,7 @@ class ListaMedicosActivity : AppCompatActivity() {
     @SuppressLint("RestrictedApi")
     private fun ColorsStatusBar(){
 
-        MyToolbar().MostrarToolbar(this,getString(R.string.dash), true)
+        MyToolbar().MostrarToolbar(this,"Medicos", true)
 
         val statusBar : Window = window
         statusBar.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)

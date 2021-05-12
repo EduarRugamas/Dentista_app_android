@@ -16,6 +16,7 @@ class ControlCitasActivity : AppCompatActivity() {
         ColorsStatusBar()
 
 
+
     }
 
     @SuppressLint("RestrictedApi")
@@ -28,4 +29,7 @@ class ControlCitasActivity : AppCompatActivity() {
         statusBar.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
         statusBar.statusBarColor = ContextCompat.getColor(baseContext, R.color.background_resource)
     }
+
+
+
 }

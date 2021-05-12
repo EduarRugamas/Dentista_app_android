@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Dashboard.Screen_Dash.CrearCitaActivity">
 
     <include
@@ -15,12 +17,150 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Crear citas"
-        android:textSize="35sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.44"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/crea_tu_cita_aqui"
+        android:textColor="@color/background_resource"
+        android:textSize="29sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Spinner
+            android:id="@+id/spinner_opciones_servicios"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_gravity="center"
+            />
+
+    <Button
+        android:id="@+id/Btn_formulario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_gravity="center"
+        android:background="@color/verde"
+        android:text="@string/formulario"
+        android:textColor="@color/blanco"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout_crear_cita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_layout"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:orientation="vertical"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        >
+
+        <EditText
+            android:id="@+id/GetNombre_Apellido"
+            android:layout_width="365dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_input_text"
+            android:drawableStart="@drawable/ic_nombre_apellido"
+            android:drawablePadding="12dp"
+            android:hint="@string/nombre_y_apellido"
+            android:inputType="text"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColor="@color/background_resource"
+            android:textColorHint="@color/gris"
+            android:textSize="19sp"
+            tools:ignore="Autofill" />
+
+        <LinearLayout
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+            <Spinner
+                android:id="@+id/spinner_dias_semana"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="5dp"
+
+
+                />
+            <TextView
+                android:id="@+id/hora_procedimiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_input_text"
+                android:padding="15dp"
+                tools:text="9:30 a.m a 12:00 p.m"
+                android:textColor="@color/background_resource"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_input_text"
+            android:padding="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/background_resource"
+                android:textSize="20sp"
+                android:text="@string/procedimiento"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:id="@+id/nombre_procedimiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/background_resource"
+                android:textSize="20sp"
+                tools:text="Frenos"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="-7dp"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_agendar_la_cita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/agendar_cita"
+            android:layout_margin="10dp"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
